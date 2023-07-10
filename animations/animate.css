@@ -1,0 +1,38 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 20%;
+    animation-name: ghoom;
+    position: relative; 
+    animation-duration: 5s;
+    margin: auto;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+h1{
+    color: aquamarine;
+   position: relative; 
+    margin-bottom: 100px;
+    animation-name: leftright;
+    animation-duration:5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@keyframes leftright{
+    0%{top:0px; left: 0px;}
+    /* 25%{top:0px; left: 50px;} */
+    50%{top:0px; left: 200px;}
+    /* 75%{top:0px; left: 50px;} */
+    100%{top:0px; left: 0px;}
+    
+}
+
+@keyframes ghoom {
+    0%{transform: rotate(-180deg) translateY(100px);}
+   100%{transform: rotate(180deg) translateY(100px) ;}
+    
+}

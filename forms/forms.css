@@ -1,0 +1,22 @@
+
+
+.img_logo{width: 20%;
+    /* float: right; */
+    
+       
+}
+
+
+.top{
+    position: relative;
+    /* width: 70%; */
+    /* left: 15%; */
+    /* top: 20%; */
+    background-color:  #6DD5FA;
+
+}
+
+.low{
+    background-color: #FBD786;
+ 
+}
