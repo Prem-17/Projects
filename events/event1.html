@@ -18,21 +18,21 @@
 
 <script>
 var x = document.getElementById("button");
-x.addEventListener("mouseover", myFunction);
-function myFunction() {
+x.addEventListener("mouseover", Function1);
+function Function1() {
   document.getElementById("para").innerHTML += "Moused over!<br>";
 }
 
 
 var y=document.getElementById("button2");
-y.addEventListener("click", mySecondFunction);
-function mySecondFunction() {
+y.addEventListener("click", Function2);
+function Function2() {
   document.getElementById("para").innerHTML += "Clicked!<br>";
 }
 
 var z=document.getElementById("button3");
-z.addEventListener("mouseout", myThirdFunction);
-function myThirdFunction() {
+z.addEventListener("mouseout",Function3);
+function Function3() {
   document.getElementById("para").innerHTML += "Moused out!<br>";
 }
 
