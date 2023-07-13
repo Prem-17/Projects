@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event</title>
-</head>
+
+<html>
+    <head>
+        <title>Button Interactions</title>
+    </head>
 <body>
-    
+
+<h2>Event listener</h2>
+
+<p>interact with buttons</p>
+
+<button id="button">mouse Over</button>
+<button id="button2">click</button>
+<button id="button3">mouse out</button>
+
+<p id="para"></p>
+
+<script>
+var x = document.getElementById("button");
+x.addEventListener("mouseover", myFunction);
+function myFunction() {
+  document.getElementById("para").innerHTML += "Moused over!<br>";
+}
+
+
+var y=document.getElementById("button2");
+y.addEventListener("click", mySecondFunction);
+function mySecondFunction() {
+  document.getElementById("para").innerHTML += "Clicked!<br>";
+}
+
+var z=document.getElementById("button3");
+z.addEventListener("mouseout", myThirdFunction);
+function myThirdFunction() {
+  document.getElementById("para").innerHTML += "Moused out!<br>";
+}
+
+</script>
+
 </body>
 </html>
